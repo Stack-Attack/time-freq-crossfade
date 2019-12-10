@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wordcount</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <style>
+      .container {
+        max-width: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+        <header>Time-Frequency Crossfade</header>
+        <form method=POST enctype=multipart/form-data action="{{ url_for('main') }}">
+            <input type=file name=sound1>
+            <input type=file name=sound2>
+            <input type=submit value=Upload onclick="$('#loading').show();">
+        </form>
+        <div id="loading" style="display:none;"><img src="static/loading.svg" alt="" ></div>
+    </div>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>
